@@ -7,6 +7,6 @@
 #	Variables to set in snort.conf
 #	$CANARY = Host to send test packets to
 #
-alert tcp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-LOW";offset: 0; depth: 20;msg:"LOW PRIORITY NIDS TEST PACKET"; sid: 6666661;priority: 3;)
-alert tcp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-MED";offset: 0; depth: 20;msg:"MEDIUM PRIORITY NIDS TEST PACKET"; sid: 6666662;priority: 2;)
-alert tcp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-HIGH";offset: 0; depth: 21;msg:"HIGH PRIORITY NIDS TEST PACKET"; sid: 6666663;priority: 1;)
+alert udp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-LOW";offset: 0; depth: 20;msg:"LOW PRIORITY NIDS TEST PACKET"; sid: 6666661;priority: 3;)
+alert udp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-MED";offset: 0; depth: 20;msg:"MEDIUM PRIORITY NIDS TEST PACKET"; sid: 6666662;priority: 2;)
+alert udp any $CANARY -> any 1337 (content:"NIDS-TEST-PACKET-HIGH";offset: 0; depth: 21;msg:"HIGH PRIORITY NIDS TEST PACKET"; sid: 6666663;priority: 1;)
