@@ -6,10 +6,8 @@
 # https://github.com/DC423/NIDS-TEST/blob/master/nids-test.rules
 #
 #########################################
-import argparse
 import socket
 import sys
-import random
 
 # Argument Checking
 if (len(sys.argv) != 2): 
