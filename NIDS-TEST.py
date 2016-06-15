@@ -25,8 +25,8 @@ MESSAGE3 = "NIDS-TEST-PACKET-HIGH"
 # create socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # send all three messages
-sock.sendto(bytes(MESSAGE1, "utf-8"), (host, port))
-sock.sendto(bytes(MESSAGE2, "utf-8"), (host, port))
-sock.sendto(bytes(MESSAGE3, "utf-8"), (host, port))
+sock.sendto(MESSAGE1, (host, port))
+sock.sendto(MESSAGE2, (host, port))
+sock.sendto(MESSAGE3, (host, port))
 # close the socket, just incase you didn't get reset by peer..
 sock.close()
