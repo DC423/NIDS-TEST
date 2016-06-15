@@ -28,5 +28,5 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.sendto(MESSAGE1, (host, port))
 sock.sendto(MESSAGE2, (host, port))
 sock.sendto(MESSAGE3, (host, port))
-# close the socket, just incase you didn't get reset by peer..
+# close the socket
 sock.close()
